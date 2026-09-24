@@ -1,10 +1,6 @@
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    max-width: 400px;
     background-color: #fff;
     border-radius: 20px;
     overflow: hidden;
@@ -17,13 +13,10 @@
   box-sizing: border-box;
 }
 body {
-  min-height: 100vh;
-  padding: 40px;
+  padding: 24px;
   background-color: #f5f0eb;
   font-family: 'Helvetica Neue', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
 }
 .card:hover {
     transform: translateY(-4px);
@@ -40,23 +33,32 @@ body {
     gap: 12px;
 }
 #country {
-    font-size: 26px;
-    color: #37231f;
-    font-weight: 600;
+  font-size: 22px;
+  color: #3e2723;
+  font-weight: 600;
 }
 .meta {
-    font-size: 14px;
-    color: #975d4e;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+   font-size: 13px;
+  color: #8d6e63;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .flavor {
-    font-size: 16px;
-    color: #37231f;
-    font-weight: 500;
+    font-size: 15px;
+  color: #5d4037;
+  font-weight: 500;
 }
 .description {
-    font-size: 14px;
-    color: #6b4c40;
-    line-height: 1.5;
+font-size: 14px;
+  line-height: 1.6;
+  color: #6d4c41;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    margin: 0 auto;
+}
+#big {
+    grid-column: span 2;
 }
